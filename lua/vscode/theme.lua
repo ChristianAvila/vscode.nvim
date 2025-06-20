@@ -911,6 +911,27 @@ theme.set_highlights = function(opts)
         hl(0, 'FocusedSymbol', { fg = c.vscBack, bg = '#AF00DB' })
         hl(0, 'SymbolsOutlineConnector', { fg = c.vscTabOther, bg = 'NONE' })
     end
+
+    -- yetone/avante.nvim
+    if isDark then
+        -- hl(0, 'AvanteTitle', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark })
+        -- hl(0, 'AvanteReversedTitle', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight })
+        -- hl(0, 'AvanteSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftDark })
+        -- hl(0, 'AvanteReversedSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftMid })
+        -- hl(0, 'AvanteThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
+        hl(0, 'AvanteReversedThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
+        hl(0, 'AvanteConflictCurrent', { fg = c.vscGitConflicting, bg = c.vscDiffRedDark})
+        hl(0, 'AvanteConflictIncoming', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark})
+    else
+       -- hl(0, 'AvanteTitle', { fg = c.vscGitAdded, bg = c.vscDiffGreenDark })
+       -- hl(0, 'AvanteReversedTitle', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight })
+       -- hl(0, 'AvanteSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftDark })
+       -- hl(0, 'AvanteReversedSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftMid })
+       -- hl(0, 'AvanteThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
+        hl(0, 'AvanteReversedThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedLight })
+        hl(0, 'AvanteConflictCurrent', { fg = c.vscGitConflicting, bg = c.vscDiffRedLight})
+        hl(0, 'AvanteConflictIncoming', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight})
+    end
 end
 
 theme.link_highlight = function()
