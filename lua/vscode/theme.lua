@@ -928,9 +928,10 @@ theme.set_highlights = function(opts)
        -- hl(0, 'AvanteSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftDark })
        -- hl(0, 'AvanteReversedSubtitle', { fg = c.vscPopupFront, bg = c.vscLeftMid })
        -- hl(0, 'AvanteThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedDark })
-        hl(0, 'AvanteReversedThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedLightLight })
         hl(0, 'AvanteConflictCurrent', { fg = c.vscGitConflicting, bg = c.vscDiffRedLightLight })
+        hl(0, 'AvanteConflictCurrentLabel', { fg = c.vscGitConflicting, bg = c.vscDiffRedLightLight })
         hl(0, 'AvanteConflictIncoming', { fg = c.vscGitAdded, bg = c.vscDiffGreenLight})
+        hl(0, 'AvanteReversedThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedLightLight })
     end
 end
 
