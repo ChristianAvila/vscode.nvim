@@ -924,6 +924,15 @@ theme.set_highlights = function(opts)
         hl(0, 'AvanteReversedThirdTitle', { fg = c.vscGitDeleted, bg = c.vscDiffRedLightLight })
         hl(0, 'AvanteToBeDeletedWOStrikethrough', { fg = c.vscGitConflicting, bg = c.vscDiffRedLightLight })
     end
+
+    -- render-markdown.nvim
+    hl(0, 'RenderMarkdownH1Bg', { fg = c.vscDarkBlue, bg = c.vscBack})
+    hl(0, 'RenderMarkdownH2Bg', { fg = c.vscRed, bg = c.vscBack})
+    hl(0, 'RenderMarkdownH3Bg', { fg = c.vscDarkYellow, bg = c.vscBack})
+    hl(0, 'RenderMarkdownH4Bg', { fg = c.vscBlueGreen, bg = c.vscBack})
+    hl(0, 'RenderMarkdownH5Bg', { fg = c.vscDarkBlue, bg = c.vscBack})
+    hl(0, 'RenderMarkdownH6Bg', { fg = c.vscViolet, bg = c.vscBack})
+
 end
 
 theme.link_highlight = function()
